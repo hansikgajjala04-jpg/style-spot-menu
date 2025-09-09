@@ -1,12 +1,25 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/restaurant/Header";
+import Hero from "@/components/restaurant/Hero";
+import Menu from "@/components/restaurant/Menu";
+import About from "@/components/restaurant/About";
+import Gallery from "@/components/restaurant/Gallery";
+import Reservation from "@/components/restaurant/Reservation";
+import Contact from "@/components/restaurant/Contact";
+import Footer from "@/components/restaurant/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <Menu />
+        <About />
+        <Gallery />
+        <Reservation />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
